@@ -1,0 +1,218 @@
+/* Formatação Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text);
+}
+
+:root {
+    font-family: 'Rubik', sans-serif;
+    --background: #141418;
+    --black: #222222;
+    --light-black: #1b1b1b;
+    --container-background: #1f1f1f;
+    --nav-background: #1c1c1f;
+    --grey: #4d4d4d;
+    --text: #F5F5F5;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gap {
+    gap: 45px;
+}
+
+.hover-scale:hover {
+    cursor: pointer;
+    transform: scale(110%);
+    color: var(--text);
+}
+
+.transition {
+    transition: .5s;
+}
+
+.text-grey {
+    color: var(--grey)
+}
+
+/* FORMATAÇÃO DO ROOT */
+
+#root {
+    width: 100vw;
+    background-color: var(--background);
+}
+
+/* FORMATAÇÃO DA SCROLLBAR */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--container-background);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--grey);
+    border-radius: 20px;
+}
+
+/* FORMATAÇÃO DA NAV */
+.nav-jogos {
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 45px;
+    
+    background-color: var(--container-background);
+}
+
+.nav-icons img{
+    width: 35px;
+    height: 35px;
+}
+
+.nav-logo {
+    width: 65px;
+    height: 65px;
+}
+
+/* FORMATAÇÃO DO DESTAQUE */
+
+.destaque-container {
+    width: 100vw;
+    height: 500px;
+    margin: 35px 0px;
+}
+
+.destaque-banner {
+    width: 400px;
+    height: inherit;
+
+    border-radius: 5px 0px 0px 5px;
+}
+
+.destaque-desc {
+    width: 450px;
+    height: inherit;
+    flex-direction: column;
+    padding: 50px 35px;
+
+    background-color: var(--container-background);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.destaque-title {
+    width: 380px;
+    height: 60px;
+    justify-content: start;
+    padding-left: 15px;
+
+    font-size: 2.5em;
+}
+
+.destaque-bio {
+    width: 380px;
+    height: fit-content;
+    padding: 15px;
+}
+
+/* FORMATAÇÃO DO BOTÃO SAIBA MAIS */
+
+.saiba-mais {
+    width: 150px;
+    height: 45px;
+    
+    border-radius: 5px;
+    border: unset;
+    outline: unset;
+    background-color: var(--light-black);
+    font-size: 1.2em;
+}
+
+/* FORMATAÇÃO DO BOTÃO COMPRAR */
+
+.btn-comprar {
+    width: 245px;
+    height: 60px;
+
+
+    background-color: var(--grey);
+    font-size: 1.2em;
+    color: var(--text);
+    border: unset;
+    border-radius: 10px;
+    outline: unset;
+
+    transition: 0.5s;
+}
+
+/* FORMATAÇÃO DO SEARCH (NÃO IMPLEMENTADO) */
+
+.search-container {
+    width: 100vw;
+    height: 60px;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 0px 25px;
+
+    background-color: var(--container-background);
+    border-bottom: 3px solid var(--light-black);
+}
+
+.search-container h2 {
+    font-size: 2em;
+}
+
+.search-box {
+    width: 250px;
+    height: 35px;
+    padding: 0 15px;
+
+    border: 1px solid var(--grey);
+    outline: unset;
+    background-color: var(--light-black);
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* FORMATAÇÃO DOS JOGOS (CONTAINER E CARDS) */
+
+.container-jogos {
+    width: inherit;
+    min-height: 450px;
+    height: fit-content;
+    padding: 10px 0px;
+    gap: 35px;
+    flex-wrap: wrap;
+
+    background-color: var(--container-background);
+}
+
+.card {
+    width: 270px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-img {
+    width: inherit;
+    height: 320px;
+}
+
+.card-desc {
+    width: inherit;
+    height: fit-content;
+    word-wrap: break-word;
+}

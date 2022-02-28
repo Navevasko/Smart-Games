@@ -1,0 +1,166 @@
+/* FORMATAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Rubik', sans-serif;
+    --background: #141418;
+    --black: #222222;
+    --light-black: #1b1b1b;
+    --container-background: #1f1f1f;
+    --nav-background: #1c1c1f;
+    --grey: #4d4d4d;
+    --text: #F5F5F5;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gap {
+    gap: 45px;
+}
+
+.hover-scale:hover {
+    cursor: pointer;
+    transform: scale(110%);
+    color: var(--text);
+}
+
+.transition {
+    transition: .5s;
+}
+
+.text-grey {
+    color: var(--grey)
+}
+
+/* FORMATAÇÃO DA MODAL */
+
+#shadow-modal {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    top: 0;
+    left: 0;
+
+    background-color: #141418d0;
+}
+
+.container-modal {
+    width: 90vw;
+    height: 95vh;
+
+    position: absolute;
+
+    background-color: var(--black);
+    border-radius: 15px;
+}
+
+.banner-modal {
+    width: 50%;
+    height: 100%;
+
+    border-radius: 15px 0 0px 15px;
+}
+
+.info-modal {
+    width: 50%;
+    height: 100%;
+
+    padding: 50px;
+}
+
+.close-modal {
+    width: 40px;
+    height: 40px;
+
+    position: relative;
+    left: 590px;
+    top: -35px;
+
+    background-color: unset;
+    border: unset;
+    outline: unset;
+    font-size: 2.5em;
+    font-family: 'Mallanna', sans-serif;
+}
+
+.close-modal{
+    cursor: pointer;
+}
+
+.titulo-modal {
+    width: 100%;
+    height: fit-content;
+    
+    margin-top: -75px;
+    margin-bottom: 5px;
+
+    font-size: 3.5em;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.plataformas-modal {
+    width: 100%;
+    height: 25px;
+    gap: 15px;
+
+    margin-top: -10px;
+}
+
+.desc-modal {
+    width: 100%;
+    height: fit-content;
+
+    color: var(--text);
+    font-size: 1.2em;
+}
+
+.comprar-modal {
+    margin: 15px;
+    gap: 150px;
+    margin-top: 35px;
+    margin-bottom: 55px;
+
+    font-size: 2em;
+    color: var(--text);
+}
+
+.lojas-modal {
+    width: 100%;
+    height: 150px;
+
+    margin-top: 35px;
+    gap: 25px;
+}
+
+.loja {
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--text);
+    transition: 0.5s;
+}
+
+.loja img {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 10px;
+}
+
+.loja:hover {
+    transform: scale(105%);
+    cursor: pointer;
+}
